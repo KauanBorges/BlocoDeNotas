@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Mensagem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1 style="text-align: center;">Mensagem</h1>
+        <form action="#" th:action="@{/mensagem}" th:object="${mensagem}" method="post">
+            <p> Título: <input type="text" th:field="*{titulo}" /></p>
+            <p> Mensagem: <input type="text" th:field="*{texto}" /></p>
+            <p><input type="submit" value="Enviar" /></p>
+            <a href="/"> Página inicial </a>
+        </div>
+    </form>
+</body>
+
+</html>

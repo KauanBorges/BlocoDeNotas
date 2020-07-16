@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Resposta Mensagem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <div style="text-align: center;">
+      <h1>Resposta</h1>
+      <p th:text="'Título: ' + ${mensagem.titulo}" />
+      <p th:text="'Mensagem: ' + ${mensagem.texto}" />
+      <a href="/mensagem"> Nova Mensagem </a>
+    </div>
+  </body>
+</html>
